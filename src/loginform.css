@@ -1,0 +1,96 @@
+*{
+    width: 100%;
+    padding: 12px 20px;
+    box-sizing: border-box;
+}
+
+/* @font-face {
+    font-family: "CustomFont";
+    src:url("../fonts/RolexLight.woff2");
+} */
+.page {
+display: flex;
+justify-content: center;
+align-items: center;
+height: 100vh;
+width: 100%;
+}
+.cover{
+    background-color: white;
+    width: 30em;
+    height: 35em;
+    position: relative;
+    border-radius: 1em;
+    box-shadow: 0 0.188em 1.550em rgb(100, 156, 156);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+.alt-login{
+    width: 110%;
+    height: 5em;
+    display: flex;
+    justify-content: space-around;
+}
+.alt-login div{
+    width: 45%;
+    height: 90%;
+    border-radius: 0;
+    background-color: black;
+    background-position: center;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+.goggle{background-image: url("https://lirp.cdn-website.com/f8c5b693/dms3rep/multi/opt/80-google-plus-512_edit-50w.png");}
+.facebook{background-image: url("https://vignette.wikia.nocookie.net/nickiminaj/images/5/56/FB.png/revision/latest/scale-to-width-down/50?cb=20140125031444");}
+
+input{
+    border: none;
+    background-color:  rgb(229, 226, 226);
+    height: 4em;
+    width: 80%;
+    border-radius: 0.25em;
+    text-align: center;
+    padding: 2em;
+}
+input:focus {
+outline-color: rgb(32,177,255);
+}
+.login-btn{
+    width: 40%;
+    height: 3em;
+    background-color: rgb(32,177,255);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s;
+    border-radius: 0.25em;
+    cursor: pointer;
+}
+.login-btn:hover{transform: scale(1.25);}
+
+.text{
+    position: relative;
+    bottom: -2em;
+}
+.hide{
+   position: absolute;
+   transform: scale(0);
+}
+
+.login-popup{
+    position: absolute;
+    height: 30em;
+    width:30em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0.25em;
+    background-color: black;
+    color: white;
+    bottom: 0;
+    transform: scale(1);
+    transform: 1.5s;
+}
